@@ -1,0 +1,16 @@
+{
+    "name": "ramiromd/twitter-gpt",
+    "version": "0.0.1",
+    "scripts": {
+        "test:unit" : "./vendor/bin/phpunit --configuration phpunit.dist.xml  --testsuite Unit --testdox",
+        "test:integration" : "./vendor/bin/phpunit --configuration phpunit.dist.xml  --testsuite Integration --testdox"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ramiromd\\TwitterGpt\\": ["src/", "test/"]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
