@@ -11,5 +11,5 @@ RUN php composer-setup --install-dir=/usr/local/bin --filename=composer
 # INSTALL NGINX
 RUN apk add nginx
 WORKDIR /var/www/html
-COPY src .
+COPY app .
 EXPOSE 80
